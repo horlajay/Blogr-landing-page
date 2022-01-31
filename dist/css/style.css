@@ -337,7 +337,7 @@
   color: #3e52a3;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1366px) {
   .text-box-area h1 {
     font-size: 30px;
   }
