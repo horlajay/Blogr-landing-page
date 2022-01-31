@@ -8,8 +8,8 @@
 }
 
 .header {
-  background-image: url(/dist/images/bg-pattern-intro.svg), -webkit-gradient(linear, left top, left bottom, from(#ff8f70));
-  background-image: url(/dist/images/bg-pattern-intro.svg), linear-gradient(#ff8f70);
+  background-image: url(/images/bg-pattern-intro.svg), -webkit-gradient(linear, left top, left bottom, from(#ff8f70));
+  background-image: url(/images/bg-pattern-intro.svg), linear-gradient(#ff8f70);
   width: 100%;
   min-height: 50vh;
   background-position: right;
@@ -22,7 +22,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 2% 8%;
+  padding: 2% 0 2% 4%;
 }
 
 .nav-links-sm {
@@ -44,15 +44,17 @@
 }
 
 .logo {
-  margin-right: 50px;
-  width: 150px;
+  margin-right: 20px;
+}
+
+.nav-links-left ul {
+  position: absolute;
 }
 
 .nav-links-left ul li {
   list-style: none;
   display: inline-block;
   padding: 12px 12px;
-  position: relative;
 }
 
 .nav-links-left ul li a {
@@ -64,7 +66,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-left: 600px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-right: -700px;
 }
 
 .nav-btn a {
@@ -159,7 +164,7 @@
   text-align: center;
   width: 100%;
   margin: auto;
-  padding-top: 100px;
+  padding-top: 50px;
   margin-bottom: 70px;
   overflow: hidden;
 }
@@ -190,8 +195,8 @@
 
 .design h2 {
   color: #4b5862;
-  margin-bottom: -80px;
   font-size: 30px;
+  position: relative;
 }
 
 .design-col-text {
@@ -337,7 +342,7 @@
   color: #3e52a3;
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 700px) {
   .text-box-area h1 {
     font-size: 30px;
   }

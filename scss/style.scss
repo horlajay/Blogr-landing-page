@@ -10,7 +10,7 @@
     font-family: 'Overpass' ,'Ubuntu';
 }
 .header {
-    background-image: url(/dist/images/bg-pattern-intro.svg), linear-gradient($Very-light-red);
+    background-image: url(/images/bg-pattern-intro.svg), linear-gradient($Very-light-red);
     width: 100%;
     min-height: 50vh;
     background-position: right;
@@ -20,7 +20,7 @@
 }
 .nav-links {
     display: flex;
-    padding: 2% 8%;
+    padding: 2% 0 2% 4%;
 }
 .nav-links-sm{
     display: flex;
@@ -31,14 +31,15 @@
     justify-content: space-between;
 }
 .logo {
-    margin-right: 50px;
-    width: 150px;
+    margin-right: 20px;
+}
+.nav-links-left ul{
+    position: absolute;
 }
 .nav-links-left ul li {
     list-style: none;
     display: inline-block;
     padding: 12px 12px;
-    position: relative;
 }
 .nav-links-left ul li a{
     color: $White-text;
@@ -46,7 +47,8 @@
 }
 .nav-btn {
     display: flex;
-    margin-left: 600px;
+    justify-content: space-between;
+    margin-right: -700px;
 }
 .nav-btn a{
     text-decoration: none;
@@ -130,7 +132,7 @@
     text-align: center;
     width: 100%;
     margin: auto;
-    padding-top: 100px;
+    padding-top: 50px;
     margin-bottom: 70px;
     overflow: hidden;
 
@@ -151,8 +153,8 @@
 }
 .design h2{
     color: $Very-dark-grayish-blue-body-copy;
-    margin-bottom: -80px;
     font-size: 30px;
+    position: relative;
 }
 .design-col-text{
     text-align: left;
@@ -261,7 +263,7 @@
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-@media (max-width:1366px) {
+@media (max-width:700px) {
     .text-box-area h1{
         font-size: 30px;
     }
